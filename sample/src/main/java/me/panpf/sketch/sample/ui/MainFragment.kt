@@ -53,6 +53,7 @@ class MainFragment : BaseFragment() {
                     , Page.IN_BITMAP_TEST
                     , Page.IMAGE_ORIENTATION_TEST
                     , Page.BASE64_IMAGE_TEST
+                    , Page.SHRE_ELEMENT_TEST
                     , Page.OTHER_TEST
             )
             adapter = AssemblyRecyclerAdapter(pages).apply {
@@ -112,5 +113,6 @@ enum class Page(val showName: String, val fragmentClass: Class<out Fragment>) {
     IN_BITMAP_TEST("inBitmap Test", InBitmapTestFragment::class.java),
     IMAGE_ORIENTATION_TEST("Image Orientation Test", ImageOrientationTestHomeFragment::class.java),
     BASE64_IMAGE_TEST("Base64 Image Test", Base64ImageTestFragment::class.java),
+    SHRE_ELEMENT_TEST("Share Element Test", ShareElementTestFragment::class.java),
     OTHER_TEST("Other Test", OtherTestFragment::class.java);
 }

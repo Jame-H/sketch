@@ -33,6 +33,7 @@
         <activity
             android:name=".ui.ImageDetailActivity"
             android:label="@string/app_name" />
+        <activity android:name=".ui.ShareTwoActivity"/>
 
         <service
             android:name=".NotificationService"
